@@ -1,4 +1,4 @@
-#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
+#!/usr/bin/ruby
 
 # Usage: redcarpet [<file>...]
 # Convert one or more Markdown files to HTML and write to standard output. With
@@ -60,7 +60,7 @@ def markdown(text)
     :smart               => true,
     :hard_wrap           => true,
     :safelink            => true,
-    :no_intraemphasis    => true,
+    :no_intra_emphasis    => true,
   }
   Redcarpet::Markdown.new(renderer, options).render(text)
 end
